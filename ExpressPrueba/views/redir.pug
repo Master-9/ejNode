@@ -1,0 +1,29 @@
+﻿doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', type='text/css', href='/stylesheets/main.css')
+    //link(rel='stylesheet', href='../node_modules/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+  body
+    block content
+    div.container
+        form#cuadro
+            div.form-group
+                label(for='ejInputEmail1') Email
+                input(type='email', class='form-control', id='ejInputEmail1', placeholder='Meta email')
+                small(id='emailhelp', class='form-text text-muted') No compartiermos su correo.
+            div.form-group
+                label(for='ejInputPassword1') Password
+                input(type='password', class='form-control', id='ejInputPassword1', placeholder='contrasena')
+            div.form-check
+                label(class='form-check-label', for='ejCheck1') Check me out
+                input(type='checkbox', class='form-check-input', id='ejCheck1', placeholder='Meta email')
+            button(type='submit', class='btn btn-primary') Enviar
+
+    a.link(href='about.html', target='_blank') Enlace 
+
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    //script(src='../node_modules/bootstrap/dist/js/bootstrap.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='/javascripts/demo.js')
